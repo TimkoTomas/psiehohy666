@@ -8,33 +8,45 @@
     <title>Smart chicken coop</title>
 </head>
 <header>
-    <span id="header">SMART CHICKEN COOP</span> <span id="time"></span>
+    <span id="header">SMART CHICKEN COOP</span> <span id="txt"></span>
 </header>
-<body>
+<body onload="startTime()">
     <div class="temp_container">
-        Coop temperature: %?
+        Wanted coop temperature: 15°C
         <br>
-        Actual temperature: %?
+        Actual temperature: 13°C
         <br><br>
         <button id="heater_minus">Heater -</button>
         <button id="heater_plus">Heater +</button>
     </div>
     <div class="temp_container">
-        Coop temperature: %?
+        Max water: 70%
         <br>
-        Actual temperature: %?
+        Actual water level: 40%
         <br><br>
-        <button id="heater_minus">Heater -</button>
-        <button id="heater_plus">Heater +</button>
+        <button id="heater_minus">Water -</button>
+        <button id="heater_plus">Water +</button>
     </div>
     <div class="temp_container">
-        Coop temperature: %?
+        Is door open?
         <br>
-        Actual temperature: %?
+        YES
         <br><br>
-        <button id="heater_minus">Heater -</button>
-        <button id="heater_plus">Heater +</button>
+        <button id="heater_minus">Close door</button>
+        <button id="heater_plus">Open door</button>
     </div>
+    <table>
+        <tr>
+          <th>Temperature</th>
+          <th>Humidity</th> 
+          <th>Light volume</th>
+        </tr>
+        <tr>
+          <td>13°C</td>
+          <td>64%</td> 
+          <td>60%</td>
+        </tr>
+      </table>
 </body>
 <footer>
     <span id="copyright">Made by Tomáš Timko & Maroš Matej</span>
